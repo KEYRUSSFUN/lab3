@@ -1,0 +1,123 @@
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9; /* Очень светлый серый фон */
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background-color: #fff; /* Белый фон */
+  color: #2c3e50; /* Темный текст */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0; /* Светлая граница снизу */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em; /* Уменьшенный размер шрифта */
+  font-weight: 500; /* Полужирный шрифт */
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  color: #777; /* Более светлый текст */
+}
+
+/* Menu */
+nav {
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  width: 250px;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  margin-bottom: 10px;
+}
+
+nav > ul > li > button {
+  cursor: pointer;
+  border: 1px solid #ddd; /* Тонкая серая граница */
+  background-color: #fff;
+  padding: 10px 15px;
+  text-align: left;
+  display: block;
+  width: 100%;
+  color: #444;
+  font-weight: 500; /* Полужирный шрифт */
+  transition: border-color 0.3s, color 0.3s; /* Плавный эффект */
+  border-radius: 5px; /* Закругленные углы */
+}
+
+.lab-2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #ddd; /* Тонкая серая граница */
+  background-color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  height: 50px;
+  width: 200px;
+  color: #444;
+  font-weight: 500; /* Полужирный шрифт */
+  transition: border-color 0.3s, color 0.3s; /* Плавный эффект */
+  border-radius: 5px; /* Закругленные углы */
+}
+
+nav > ul > li > button:hover {
+  border-color: #888; /* Более темная граница при наведении */
+  color: #222;
+}
+
+/* Content */
+div[style*="flex: 1"] {
+  padding: 30px;
+  background-color: #fff; /* Белый фон */
+  border-left: 1px solid #e0e0e0; /* Левая граница */
+}
+
+/* Стиль для h2 в Content */
+div[style*="flex: 1"] h2 {
+  font-size: 1.7em; /* Уменьшенный размер шрифта */
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0; /* Горизонтальная линия под заголовком */
+  padding-bottom: 5px;
+}
+
+/* Общий контейнер */
+.main-container {
+  flex-direction: column;
+  display: flex;
+  min-width: 1920px;
+  min-height: 100vh;
+  overflow: hidden; /* Обрезаем тени и т.д. */
+}
+
+/*  Выбираем элемент с display: flex и flex: 1  */
+div[style*="display: flex"][style*="flex: 1"] {
+  background-color: #fff;
+  padding: 0; /* Убираем отступы для большего соответствия концепции блока */
+}
